@@ -38,7 +38,7 @@ function incrementClickedColor() {
 //appends a new div to the DOM and adds the appropriate class.  CSS handles the background-color property.
 function drawColorCubeOnDOM() {
     $('.container').append('<div class="color-cube"></div>');
-    $('.color-cube').last().addClass(clickedColor);
+    $('.color-cube').last().addClass(clickedColor);  //this could have been combined by simply concatenating the class when the Div is first created.
 }
 
 
