@@ -18,8 +18,9 @@ $(document).ready(function(){
 
 })
 
+
+//checks to see the value of clickedColor and increments the appropriate colorClick variable.
 function incrementClickedColor(){
-  console.log('incrementClickedColor has been called');
   if(clickedColor === 'red'){
     redClicks++;
     $('#red').text(redClicks);
@@ -35,16 +36,13 @@ function incrementClickedColor(){
     }
 }
 
+//appends a new div to the DOM and adds the appropriate class.  CSS handles the background-color property.
 function drawColorCubeOnDOM(){
   $('.container').append('<div class="color-cube"></div>');
   $('.color-cube').last().addClass(clickedColor);
-
 }
 
-// function paintCube(){
-//   if (clickedColor == 'red')
-//
-// }
+
 
 
 
